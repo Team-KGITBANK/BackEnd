@@ -10,7 +10,7 @@ const config = require('../config/global.json')
 router.post('/new', function(req, res, next) {
   const { id, password, firstName, lastName, mail, contactPhone, accountType,
     companyRegisterationNo, minimumWasteAmountInKg, maximumWasteAmountInKg, smallWasteUnitPricePerTon,
-    mediumWasteUnitPricePerTon, largeWasteUnitPricePerTon } = req.body
+    mediumWasteUnitPricePerTon, largeWasteUnitPricePerTon, wasteDeliverTypesAvailable } = req.body
   if(!id || !password || !firstName || !lastName) {
     res.json({ "status": 400 })
     return
@@ -23,7 +23,7 @@ router.post('/new', function(req, res, next) {
     res.json({ "status": 4022 })
   }
   if(accountType) {
-    if(!company || !contactPhone || !companyRegisterationNo || !minimumWasteAmountInKg || !maximumWasteAmountInKg || !smallWasteUnitPricePerTon || !mediumWasteUnitPricePerTon || !largeWasteUnitPricePerTon) {
+    if(!company || !contactPhone || !companyRegisterationNo || !minimumWasteAmountInKg || !maximumWasteAmountInKg || !smallWasteUnitPricePerTon || !mediumWasteUnitPricePerTon || !largeWasteUnitPricePerTon || !wasteDeliverTypesAvailable) {
       res.json({ "status": 400 })
       return
     }
@@ -57,7 +57,7 @@ router.post('/new', function(req, res, next) {
     "smallWasteUnitPricePerTon": smallWasteUnitPricePerTon !== undefined ? smallWasteUnitPricePerTon : "",
     "mediumWasteUnitPricePerTon": mediumWasteUnitPricePerTon !== undefined ? mediumWasteUnitPricePerTon : "",
     "largeWasteUnitPricePerTon": largeWasteUnitPricePerTon !== undefined ? largeWasteUnitPricePerTon : "",
-
+    "wasteDeliverTypesAvailable": wasteDeliverTypesAvailable !== undefined ? wasteDeliverTypesAvailable : "",
   }
   const successMessageBuilder = {
     "status": 200,
@@ -146,7 +146,7 @@ router.get('/list', (req, res) => {
 router.post('/edit', (req, res) => {
   const { id, authToken, firstName, lastName, mail, contactPhone, accountType,
     companyRegisterationNo, minimumWasteAmountInKg, maximumWasteAmountInKg, smallWasteUnitPricePerTon,
-    mediumWasteUnitPricePerTon, largeWasteUnitPricePerTon } = req.body
+    mediumWasteUnitPricePerTon, largeWasteUnitPricePerTon, wasteDeliverTypesAvailable } = req.body
 
   if(checkAuthToken(authToken, id)) {
     const data = db.get(id)
@@ -179,6 +179,9 @@ router.post('/edit', (req, res) => {
     }
     if(largeWasteUnitPricePerTon) {
       data.largeWasteUnitPricePerTon = largeWasteUnitPricePerTon
+    }
+    if(wasteDeliverTypesAvailable) {
+      data.wasteDeliverTypesAvailable = wasteDeliverTypesAvailable
     }
     db.set(id, data)
     res.json({ "status": 200 })
