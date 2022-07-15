@@ -58,6 +58,8 @@ router.post('/new', function(req, res, next) {
     "mediumWasteUnitPricePerTon": mediumWasteUnitPricePerTon !== undefined ? mediumWasteUnitPricePerTon : "",
     "largeWasteUnitPricePerTon": largeWasteUnitPricePerTon !== undefined ? largeWasteUnitPricePerTon : "",
     "wasteDeliverTypesAvailable": wasteDeliverTypesAvailable !== undefined ? wasteDeliverTypesAvailable : "",
+    "customerContractInfo": [],
+    "bizContractInfo": []
   }
   const successMessageBuilder = {
     "status": 200,
@@ -89,7 +91,7 @@ router.post('/login', (req, res) => {
     res.json({ "status": 401 })
     return
   }
-  const data = db.get(id)
+  let data = db.get(id)
   const hashedPassword = crypto.createHash('sha384').update(data.uniqueIdentifier + password, 'utf-8').digest('hex')
 
   if((hashedPassword != data.hashedPassword) && (password != data.recoveryKey)) {
@@ -118,7 +120,7 @@ router.post('/login', (req, res) => {
 router.delete('/logout', (req, res) => {
   const id = req.body.id
   const authToken = req.headers.authorization
-  const data = db.get(id)
+  let data = db.get(id)
   if(checkAuthToken(authToken, id)) {
     data.authToken = ""
     data.authTokenExpires = ""
@@ -137,7 +139,7 @@ router.get('/list', (req, res) => {
         res.json({ "status": 400 })
         return
     }
-    const data = db.get(id)
+    let data = db.get(id)
     data.uniqueIdentifier = ":redacted:"
     data.hashedPassword = ":redacted:"
     res.json(data)
@@ -149,7 +151,7 @@ router.post('/edit', (req, res) => {
     mediumWasteUnitPricePerTon, largeWasteUnitPricePerTon, wasteDeliverTypesAvailable } = req.body
 
   if(checkAuthToken(authToken, id)) {
-    const data = db.get(id)
+    let data = db.get(id)
     if(firstName) {
       data.firstName = firstName
     }
