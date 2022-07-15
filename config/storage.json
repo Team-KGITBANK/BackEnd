@@ -15,7 +15,9 @@
         "maximumWasteAmountInKg": "",
         "smallWasteUnitPricePerTon": "",
         "mediumWasteUnitPricePerTon": "",
-        "largeWasteUnitPricePerTon": ""
+        "largeWasteUnitPricePerTon": "",
+        "customerContractInfo": [],
+        "bizContractInfo": []
     },
     "user1": {
         "id": "user1",
@@ -33,7 +35,9 @@
         "maximumWasteAmountInKg": "",
         "smallWasteUnitPricePerTon": "",
         "mediumWasteUnitPricePerTon": "",
-        "largeWasteUnitPricePerTon": ""
+        "largeWasteUnitPricePerTon": "",
+        "customerContractInfo": [],
+        "bizContractInfo": []
     },
     "user2": {
         "id": "user2",
@@ -51,6 +55,8 @@
         "maximumWasteAmountInKg": "",
         "smallWasteUnitPricePerTon": "",
         "mediumWasteUnitPricePerTon": "",
-        "largeWasteUnitPricePerTon": ""
+        "largeWasteUnitPricePerTon": "",
+        "customerContractInfo": [],
+        "bizContractInfo": []
     }
 }
