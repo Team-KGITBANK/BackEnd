@@ -14,11 +14,11 @@
     "maximumInKg": "10000",
     "score": 1,
     "service": {
-      "delivery": true,
-      "takein": true
+      "delivery":true,
+      "takein":true
     },
     "flags": {
-      "environmentFriendly": true
+      "environmentFriendly": false
     }
   },
   "81657911387428": {
@@ -36,11 +36,11 @@
     "maximumInKg": "10000",
     "score": 2,
     "service": {
-      "delivery": true,
-      "takein": true
+      "delivery":true,
+      "takein":true
     },
     "flags": {
-      "environmentFriendly": false
+      "environmentFriendly":false
     }
   },
   "91657911508181": {
@@ -51,18 +51,18 @@
     "address": "인천광역시 서구 영재동 663-1",
     "price": {
       "small": "5000",
-      "medium": "4000",
-      "large": "3000"
+      "medium": "40000",
+      "large": "300000"
     },
-    "minimumInKg": "100000",
+    "minimumInKg": "10000",
     "maximumInKg": "100000",
-    "score": 3,
+    "score": 5,
     "service": {
-      "delivery": true,
-      "takein": true
+      "delivery":true,
+      "takein":true
     },
     "flags": {
-      "environmentFriendly": false
+      "environmentFriendly":false
     }
   },
   "21657911508700": {
@@ -72,35 +72,371 @@
     "description": "유엔텍은 특허받은 K-친환경쓰레기처리시스템을 이용하여 환경 보호에 앞장서는 기업입니다.",
     "address": "경기도 광주시 광주중앙로 2",
     "price": {
-      "small": "100000",
-      "medium": "90000",
+      "small": "10000",
+      "medium": "40000",
       "large": "80000"
     },
+    "minimumInKg": "10000",
+    "maximumInKg": "100000",
+    "score": 2,
     "service": {
-      "delivery": true,
-      "takein": true
+      "delivery":true,
+      "takein":true
     },
     "flags": {
-      "environmentFriendly": true
+      "environmentFriendly":false
     }
   },
-  "81657911387428": {
-    "id": "81657911387428",
+  "81657912555188": {
+    "id": "81657912555188",
     "companyId": "user5",
-    "name": "(주)평양재활용",
-    "description": "위대한 령도자 김정은 동지 만세!",
-    "address": "평양직할시 대동강구역 려명거리",
+    "name": "(주)퍼스트크린",
+    "description": "부산광역시 유일의 건설폐기물 전문 처리 업체입니다.",
+    "address": "부산광역시 해운대구 우동3로 11번길 23",
     "price": {
-      "small": "500000",
+      "small": "5000",
       "medium": "40000",
-      "large": "30000"
+      "large": "300000"
     },
+    "minimumInKg": "10000",
+    "maximumInKg": "100000",
+    "score": 3,
     "service": {
-      "delivery": true,
-      "takein": true
+      "delivery":true,
+      "takein":true
     },
     "flags": {
-      "environmentFriendly": false
+      "environmentFriendly":false
+    }
+  },
+  "91657911971758": {
+    "id": "91657911971758",
+    "companyId": "user6",
+    "name": "(주)로이젠",
+    "description": "로이젠은 강원도 최대 규모의 폐기물 처리 업체입니다.",
+    "address": "강원도 춘천시 태백로 12-4",
+    "price": {
+      "small": "900",
+      "medium": "60000",
+      "large": "400000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "10000000",
+    "score": 4,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "41657912215405": {
+    "id": "41657912215405",
+    "companyId": "user7",
+    "name": "(주)한국리사이클",
+    "description": "(주)한국리사이클은 전방지역 군부대 혹은 민간인을 대상으로한 특수 폐기물 전문 처리 업체입니다.",
+    "address": "경기도 파주시 평화로 172-1",
+    "price": {
+      "small": "10000",
+      "medium": "1000000",
+      "large": "60000"
+    },
+    "minimumInKg": "100000",
+    "maximumInKg": "100000",
+    "score": 3,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "61657912974308": {
+    "id": "61657912974308",
+    "companyId": "user8",
+    "name": "(주)하우스 폐기물",
+    "description": "경기도 부천시에 위치한 주택 폐기물 전문 처리 업체입니다.",
+    "address": "경기도 부천시 삼척로 13-1",
+    "price": {
+      "small": "2000",
+      "medium": "1000000",
+      "large": "60000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000",
+    "score": 4,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "01657912373170": {
+    "id": "01657912373170",
+    "companyId": "user9",
+    "name": "(주)한국ESG",
+    "description": "한국에서 가장 큰 규모의 폐기물 전문 처리 업체입니다.",
+    "address": "서울특별시 원효로 143-1",
+    "price": {
+      "small": "14000",
+      "medium": "1000000",
+      "large": "60000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "1000000000",
+    "score": 4,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "01657912379321": {
+    "id": "01657912379321",
+    "companyId": "user10",
+    "name": "(주)퍼스트크린",
+    "description": "가장 빠르게! 가장 깨끗하게!",
+    "address": "전라도 신안군 신안로 12-4",
+    "price": {
+      "small": "14000",
+      "medium": "10000",
+      "large": "600000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "10000000",
+    "score": 1,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "01657912373112": {
+    "id": "01657912373112",
+    "companyId": "user11",
+    "name": "(주)KG폐기물",
+    "description": "KG그룹의 자회사입니다. ",
+    "address": "인천광역시 중구 인천항로 20-1",
+    "price": {
+      "small": "10100",
+      "medium": "10000",
+      "large": "60000"
+    },
+    "minimumInKg": "100",
+    "maximumInKg": "100000",
+    "score": 5,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "01657912373171": {
+    "id": "01657912373171",
+    "companyId": "user12",
+    "name": "(주)공간철거",
+    "description": "건설 폐기물 운반 업체인 (주)공간철거입니다.",
+    "address": "제주특별자치시도 서귀포시 감귤로 18-9",
+    "price": {
+      "small": "1000",
+      "medium": "10300",
+      "large": "60000"
+    },
+    "minimumInKg": "100",
+    "maximumInKg": "100000",
+    "score": 3,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "12657912310101": {
+    "id": "12657912310101",
+    "companyId": "user13",
+    "name": "(주)한화상사",
+    "description": "한화 그룹의 자회사인 한화상사 입니다. 주로 생활 폐기물 처리를 진행합니다.",
+    "address": "경상남도 울산시 고래로 1-41",
+    "price": {
+      "small": "1000",
+      "medium": "10000",
+      "large": "60000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000",
+    "score": 2,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "12348912373171": {
+    "id": "12348912373171",
+    "companyId": "user14",
+    "name": "(주)삼성폐기물",
+    "description": "최첨단 장비와 함께하는 삼성폐기물!!",
+    "address": "경기도 남양주시 양주로 72-83",
+    "price": {
+      "small": "10000",
+      "medium": "100000",
+      "large": "600000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000",
+    "score": 2,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "01347932173171": {
+    "id": "01347932173171",
+    "companyId": "user15",
+    "name": "(주)압송",
+    "description": "(주)압송은 IoT를 이용한 서비스를 제공하는 기업입니다.",
+    "address": "경기도 파주시 임진로 122-3",
+    "price": {
+      "small": "3000",
+      "medium": "30000",
+      "large": "60000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000",
+    "score": 5,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":false
+    }
+  },
+  "01652912313171": {
+    "id": "01652912313171",
+    "companyId": "user16",
+    "name": "(주)산화기업",
+    "description": "고객의 만족을 최우선으로 생각하는 (주)산화기업 입니다!",
+    "address": "경기도 시흥시 시천로 182-4",
+    "price": {
+      "small": "4000",
+      "medium": "10000",
+      "large": "70000"
+    },
+    "minimumInKg": "10000",
+    "maximumInKg": "1000000",
+    "score": 1,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":true
+    }
+  },
+  "01657912338471": {
+    "id": "01657912338471",
+    "companyId": "user17",
+    "name": "(주)아맘떼",
+    "description": "엄마같은 마음으로 대신 처리해주는 폐기물 처리 업체입니다.",
+    "address": "경기도 파주시 평화로 172-1",
+    "price": {
+      "small": "140000",
+      "medium": "100000",
+      "large": "60000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000",
+    "score": 3,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":true
+    }
+  },
+  "01657921373171": {
+    "id": "01657921373171",
+    "companyId": "user18",
+    "name": "(주)크린토피아",
+    "description": "-세탁 업체 아닙니다. 세탁물 문의 그만 주세요-",
+    "address": "인천광역시 서구 승학로 201길 21",
+    "price": {
+      "small": "1000",
+      "medium": "10000",
+      "large": "60000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000",
+    "score": 3,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":true
+    }
+  },
+  "01657912447171": {
+    "id": "01657912447171",
+    "companyId": "user19",
+    "name": "(주)산와폐기물",
+    "description": "고객님의 폐기물을 고객님의 비어가는 통장처럼 빠르게 가져가겠습니다.",
+    "address": "광주광역시 전수로 18-3",
+    "price": {
+      "small": "1000",
+      "medium": "10000",
+      "large": "60000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000",
+    "score": 4,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":true
+    }
+  },
+  "01657912373100": {
+    "id": "01657912373100",
+    "companyId": "user20",
+    "name": "(주)SUFEN",
+    "description": "IoT서비스와 친환경 폐기물 처리기를 곁들인 엄청난 조합",
+    "address": "인천광역시 서구 검암로 12-3",
+    "price": {
+      "small": "500",
+      "medium": "70000",
+      "large": "100000"
+    },
+    "minimumInKg": "1000",
+    "maximumInKg": "100000000",
+    "score": 5,
+    "service": {
+      "delivery":true,
+      "takein":true
+    },
+    "flags": {
+      "environmentFriendly":true
     }
   }
 }
