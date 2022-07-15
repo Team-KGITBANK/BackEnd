@@ -7,11 +7,13 @@ const router = express.Router()
 const config = require('../config/global.json')
 
 router.get('/', (req, res) => {
+    if(!checkAuthToken(authToken, id)) return res.json({ "status": 400 })
     res.json(processorDB.JSON())
 })
 
 router.post('/', (req, res) => {
-    const { id, processorId, amount } = req.body
+    const { id, authToken, processorId, amount } = req.body
+    if(!checkAuthToken(authToken, id)) return res.json({ "status": 400 })
     if(!id || !processorId || !amount) {
         return res.json({ "status": 400 })
     }
@@ -43,5 +45,16 @@ router.post('/', (req, res) => {
     })
 
 })
-
+function checkAuthToken(token, id) {
+    if(!token || !id) {
+        return false
+    }
+    if(!db.has(id)) {
+        return false
+    }
+    if(db.get(id).authToken != token) {
+        return false
+    }
+    return true
+}
 module.exports = router
