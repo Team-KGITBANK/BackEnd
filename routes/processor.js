@@ -7,6 +7,7 @@ const router = express.Router()
 const config = require('../config/global.json')
 
 router.get('/', (req, res) => {
+    const { id, authToken } = req.body
     if(!checkAuthToken(authToken, id)) return res.json({ "status": 400 })
     res.json(processorDB.JSON())
 })
