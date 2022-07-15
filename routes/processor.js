@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
         "amount": amount,
         "status": "pending"
     })
-
+    res.json({ "status": 200 })
 })
 function checkAuthToken(token, id) {
     if(!token || !id) {
