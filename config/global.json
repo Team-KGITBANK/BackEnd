@@ -1,0 +1,9 @@
+{
+  "redis": {
+    "username": "default",
+    "password": "Y3ctdVNmGru3DhHf6aScRmauZdaSaWuDo5Z4zkKc8mYoyZ5QKF",
+    "database": "kgitbank",
+    "host": "redis-13074.c302.asia-northeast1-1.gce.cloud.redislabs.com",
+    "port": 13074
+  }
+}
